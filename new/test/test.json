@@ -1,0 +1,37 @@
+[
+    {
+
+        "amount": 500,
+        "interestRate": 16,
+        "LengthofLoan": 33,
+        "monthlyCost": 600
+    },
+    {
+
+        "amount": 32344,
+        "interestRate": 16,
+        "LengthofLoan": 33,
+        "monthlyCost": 600
+    },
+    {
+
+        "amount": 32344,
+        "interestRate": 16,
+        "LengthofLoan": 33,
+        "monthlyCost": 650
+    },
+    {
+
+        "amount": 32344,
+        "interestRate": 16,
+        "LengthofLoan": 60,
+        "monthlyCost": 650
+    },
+    {
+
+        "amount": 334,
+        "interestRate": 16,
+        "LengthofLoan": 60,
+        "monthlyCost": 650
+    }
+]

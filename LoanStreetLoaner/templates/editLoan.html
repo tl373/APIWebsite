@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}LoanStreet Loan's{% endblock %}
+{% block page_content %}
+<div class="page-header">
+ <h1>Update the following loan</h1>
+</div>
+<form action="" method="POST">
+{{ form.hidden_tag() }}
+ <label for="loan_to_update.amount">Update Loan Amount</label>
+ {{form.loan_amount(
+  class="form-control",
+ value=loan_to_update.amount)}} <br/>
+
+  <label for="loan_to_update.interestRate">Update Interest Rate</label>
+  {{form.interest_rate(
+  class="form-control",
+ value=loan_to_update.interestRate)}} <br/>
+
+ <label for="loan_to_update.LengthofLoan">Update Length of Loan</label>
+
+   {{form.total_months(
+  class="form-control",
+ value=loan_to_update.LengthofLoan)}} <br/>
+{{ form.submit() }}
+
+</form>
+
+{% endblock %}

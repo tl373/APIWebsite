@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}LoanStreet Loan's{% endblock %}
+{% block page_content %}
+<div class="page-header">
+ <h1>Welcome to Loan Street's Personal Loan website!</h1>
+
+
+</div>
+
+<body>
+ <h2>What would you like to do?</h2>
+ <h3><a href="/getLoan">Request A New Loan</a></h3>
+ <h3><a href="/yourPersonalLoanSummary">See Current Loans</a></h3>
+</body>
+
+{% endblock %}

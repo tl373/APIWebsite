@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}LoanStreet Loan's{% endblock %}
+{% block page_content %}
+<div class="page-header">
+ <h1>See below your current loans</h1>
+</div>
+
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Total amount owed</th>
+        <th>Monthly Cost</th>
+        <th>Interest Owed</th>
+        <th>Months left</th>
+      </tr>
+    </thead>
+    <tbody>
+       {% for loan in loans %}
+        <tr>
+          <td>{{ loan.id }}</td>
+          <td>{{ loan.amount }}</td>
+          <td>{{ loan.monthlyCost }}</td>
+          <td>{{ loan.percentage }}</td>
+          <td>{{ loan.LengthofLoan}}</td>
+          <td><a href="{{url_for('editLoan', id=loan.id)}}"> edit </a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+
+
+
